@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Germán Díaz</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">   
+</head>
+
+<body>
+    
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar">
+            </div>
+        </div>
+    </div>
+    <!-- ./Preloader -->  
+    
+    <!-- header  -->
+    <header class="navbar-fixed-top">
+        
+        <nav class="topnav" id="myTopnav">
+            
+            <a href="#home" class="logo"><img src="img/logo.png" alt="Logo" width="66" height="46"></a>
+            <a href="#about" >sobre mí</a>
+            <a href="#experience" >experiencia</a>
+            <a href="#projects" >proyectos</a>
+            <a href="#contact" >contacto</a>
+            <a href="javascript:void(0);" class="icon" onclick="navFunction()"><img src="img/menu.png " alt="Menú"></a>
+            
+        </nav>
+        
+    </header>
+    <!-- ./header -->
+    
+    <!-- home -->
+    <div class="section" id="home" data-stellar-background-ratio="0.5">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="disply-table">
+                <div class="table-cell" data-aos="fade-up" data-aos-delay="0">
+                    <h1 class="white">¡Hola! soy<br/><b>G</b>ermán <b>D</b>íaz</h1>
+                    <div class="output" id="output">
+                        <h2 class="cursor">¡Trabajemos juntos!</h2>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- ./home -->
+    
+    <!-- about -->
+    <div class="section" id="about">
+        <div class="container">
+            <div class="col-md-6" data-aos="fade-up">
+                <h1 class="size-50">Un poco <br/> sobre mí</h1>
+                <div class="h-50"></div>
+                <p>¡Hola! mi nombre es Germán Díaz, soy un humano normal que disfruta de las actividades humanas normales y geek de nacimiento. 
+                <br><br>Pasante de Licenciatura en Sistemas de Computación Administrativa. Trabajo como desarrollador de aplicaciones web en el Poder Judicial del Estado de Nuevo León y ocasionalmente en algún proyecto freelance. Me apasionan las artes visuales, los videojuegos, las historias fantásticas y la tecnología.
+                <br><br>Me complace participar en proyectos que se relacionan con mis gustos. Ya sean de fotografía, redacción, programación o hardware, yo estoy dispuesto a dar soluciones. Sólo dame un vaso bien grande de café con un pastelillo de chocolate y verás tu proyecto fluir.
+                </p>
+                
+                <div >
+	               <img src="img/wordcloud.jpg" class="img-responsive" alt="Word cloud" data-aos="fade-up" data-aos-delay="5"/>
+                </div>
+                
+            </div>
+            <div class="col-md-6 about-img-div">
+                 <!--<div class="about-border" data-aos="fade-up" data-aos-delay=".5"></div>-->
+                <img src="img/portimg.jpg" width="400" class="img-responsive" alt="Foto de perfil" data-aos="fade-right" data-aos-delay="5" />
+            </div>
+        </div>
+    </div>
+    <!-- ./about -->
+    
+    <!-- experience  -->
+    <div class="section" id="experience">
+        <div class="container">
+            <div class="col-md-12">
+                <h1 class="size-50">Experiencia</h1>
+                <div class="h-50"></div>
+            </div>
+            <div class="col-md-12">
+                <ul class="timeline">
+                    <li class="timeline-event" data-aos="fade-up">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">Marzo 2021 - Presente</p>
+                            <h3>Programador</h3>
+                            <h4>Poder Judicial del Estado de Nuevo León</h4>
+                            <p>Desarrollo de aplicaciones web.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".2">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">Septiembre 2017 - Febrero 2021</p>
+                            <h3>Técnico de Soporte Ti</h3>
+                            <h4>Instituto Francisco Javier Mina</h4>
+                            <p>Administración de sistemas, desarrollo web y soporte técnico.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">Noviembre 2015 - Julio 2017</p>
+                            <h3>Técnico de Soporte Ti</h3>
+                            <h4>Technology Conservation Group</h4>
+                            <p>Soporte técnico y márketing digital.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ./experience -->
+    
+    <!-- projects -->
+    <div class="section" id="projects">
+        <div class="container">
+            <div class="col-md-12">
+                <h1 class="size-50">Algunos de<br>mis proyectos</h1> 
+            </div>
+            <!-- main container -->
+            <div class="main-container portfolio-inner clearfix">
+                <!-- portfolio div -->
+                <div class="portfolio-div">
+                    <div class="portfolio">
+                        <!-- portfolio_filter -->
+                        <div class="categories-grid wow fadeInLeft">
+                            <nav class="categories">
+                                <ul class="portfolio_filter">
+                                    <li><a href="" class="active" data-filter="*">Todos</a></li>
+                                    <li><a href="" data-filter=".redac">Redacción</a></li>
+                                    <li><a href="" data-filter=".des">Desarrollo</a></li>
+                                    <li><a href="" data-filter=".foto">Fotografía</a></li>
+                                    <!--<li><a href="" data-filter=".apss">Aplicaciones</a></li>
+                                    <li><a href="" data-filter=".otros">otros</a></li>-->
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- portfolio_filter -->
+                        
+                        <!-- portfolio_container -->
+                        <div class="no-padding portfolio_container clearfix" data-aos="fade-up">
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6  redac">
+                                <a href="#openModal1" class="portfolio_item"> <img src="img/portfolio/gaming.jpg" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                            <div class="item_info"> <span>Redacción en hablamosdegamers.com</span> <em>Ver más</em> </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+                           
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 des">
+                                <a href="#openModal2" class="portfolio_item"> <img src="img/portfolio/visit.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Visitaduría Judicial</span> <em>Ver más</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+                            
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 des">
+                                <a href="#openModal3" class="portfolio_item"> <img src="img/portfolio/app.jpg" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Juego móvil: Escape!</span> <em>Ver más</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+                            
+                            <!-- single work -->
+                            <!-- <div class="col-md-4 col-sm-6 des">
+                                <a href="#openModal4" class="portfolio_item"> <img src="img/portfolio/tdo.jpg" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Web para la app</span> <em>Ver más</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> -->
+                            <!-- end single work -->
+                            
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 des">
+                                <a href="#openModal5" class="portfolio_item"> <img src="img/portfolio/ifjm.jpg" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Web IFJM</span> <em>Ver más</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+                            
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 foto">
+                                <a href="#openModal6" class="portfolio_item"> <img src="img/portfolio/vc.jpg" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Fotografía</span> <em>Ver más</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+                            
+                        </div>
+                        <!-- end portfolio_container -->
+                    </div>
+                    <!-- portfolio -->
+                </div>
+                <!-- end portfolio div -->
+            </div>
+            <!-- end main container -->
+        </div>
+    </div>
+    <!-- ./projects -->
+    <div class="h-50"></div>
+    <!-- contact -->
+    <div class="h-50"></div>
+    <div class="section" id="contact">
+        <div class="container">
+            <div class="col-md-12">
+                <h1 class="size-50">¡Contacta conmigo!</h1>
+                <div class="h-50"></div>
+            </div>
+            
+            <div class="col-md-8" data-aos="fade-up">
+                <form class="contact-bg" id="contact-form" name="contact" method="post" novalidate="novalidate">
+                    <input type="text" name="name" class="form-control" placeholder="Nombre" />
+                    <input type="email" name="email" class="form-control" placeholder="E-mail" />
+                    <!--<input type="text" name="phone" class="form-control" placeholder="Teléfono" />-->
+                    <textarea name="message" class="form-control" placeholder="Mensaje" style="height:120px"></textarea>
+                    <button id="submit" type="submit" name="submit" class="btn btn-glance">Enviar</button>
+                    <div id="success">
+                        <p class="green textcenter"> Tu mensaje fue enviado! Responderé lo antes posible. </p>
+                    </div>
+                    <div id="error">
+                        <p> Algo salió mal :c , por favor intenta recargar la página y enviar de nuevo tu mensaje. </p>
+                    </div>
+                </form>
+                <div class="h-50"></div>
+                <div class="email">
+                    <div class="icon">Redes</div>
+                </div>
+
+                <ul class="social">
+                    <li><a href="https://twitter.com/soyElsucioG" title="Twitter" target="_blank">
+                        <img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter"></a></li>
+                    <li><a href="https://www.instagram.com/ger.dv/" title="Instagram" target="_blank">
+                        <img src="https://img.icons8.com/nolan/64/000000/instagram-new.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.flickr.com/photos/124526801@N05" title="Flickr" target="_blank">
+                        <img src="https://img.icons8.com/color/48/000000/flickr.png" alt="Flickr"></a></li>
+                    <!-- <li><a href="https://www.twitch.tv/elsuciog" title="Twitch" target="_blank">
+                        <img src="https://img.icons8.com/color/48/000000/twitch.png" alt="Twitch"></a></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ./contact -->
+   
+    <!--Modal01-->
+    <div id="openModal1" class="modalDialog">
+        <div>
+         <a href="#close" title="Cerrar" class="close">X</a>
+		   <div class="modal-content">
+             <div class="container">
+               <div class="portfolio-padding">
+                <div class="col-md-2 col-md-offset-"></div>
+                 <div class="col-md-8 col-md-offset-">
+                        <h2>Redacción en<br>hablamosdegamers.com</h2>
+                        <div class="row text-center">
+                            <div class="col-md-2 col-md-offset-"></div>
+                            <div class="col-md-8 col-md-offset-"><img src="img/portfolio/gaming.jpg" alt="Proyecto" class="img-responsive"/></div>
+                            <div class="col-md-2 col-md-offset-"></div>
+                        </div>
+                        <p>
+                            En mi tiempo libre trabajo como redactor del sitio <a href="https://hablamosdegamers.com/" target="_blank">
+                            hablamosdegamers.com</a> donde se pueden encontrar artículos, reseñas y noticias de mi autoría.
+                        </p>
+                        <div class="row text-center">
+                            <div class="col-md-12 col-md-offset-">
+                                <a class="closelbl" href="#close">Cerrar</a>
+                            </div>
+                        </div>
+                        <div class="h-50"></div>
+                 </div>
+                </div>
+            </div>
+        </div>
+	   </div>
+    </div>
+    <!--fin Modal01-->
+    
+    <!--Modal02-->
+    <div id="openModal2" class="modalDialog">
+        <div>
+         <a href="#close" title="Cerrar" class="close">X</a>
+		   <div class="modal-content">
+             <div class="container">
+               <div class="portfolio-padding">
+                 <div class="col-md-2 col-md-offset-"></div>
+                 <div class="col-md-8 col-md-offset-">
+                        <h2>Tienda virtual</h2>
+                        <div class="row text-center">
+                            <div class="col-md-2 col-md-offset-"></div>
+                            <div class="col-md-8 col-md-offset-"><img src="img/portfolio/visit.png" alt="Proyecto" class="img-responsive"/></div>
+                            <div class="col-md-2 col-md-offset-"></div>
+                        </div>
+                        <p>
+                            El micrositio de <a href="https://www.pjenl.gob.mx/Visitaduria/" target="_blank">Visitadurìa Judicial</a> hecho en Angular para el front end y .Net Core para el back end. 
+                            Además del contenido de la propia web, trabaja consumiendo una API interna también hecha por mí para consultar las visitas programadas.
+                        </p>
+                        <div class="row text-center">
+                            <div class="col-md-12 col-md-offset-">
+                                <a class="closelbl" href="#close">Cerrar</a>
+                            </div>
+                        </div>
+                        <div class="h-50"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	   </div>
+    </div>
+    <!--fin Modal02-->
+    
+    <!--Modal03-->
+    <div id="openModal3" class="modalDialog">
+        <div>
+         <a href="#close" title="Cerrar" class="close">X</a>
+		   <div class="modal-content">
+             <div class="container">
+               <div class="portfolio-padding">
+                 <div class="col-md-2 col-md-offset-"></div>
+                 <div class="col-md-8 col-md-offset-">
+                        <h2>Juego móvil<br>Escape!</h2>
+                        <div class="row text-center">
+                            <div class="col-md-2 col-md-offset-"></div>
+                            <div class="col-md-8 col-md-offset-"><img src="img/portfolio/app.jpg" alt="Proyecto" class="img-responsive"/></div>
+                            <div class="col-md-2 col-md-offset-"></div>
+                        </div>
+                        <p>
+                            Escape! es una pequeña app para Android desarrollada en Unity, utilizando el lenguaje C#. 
+                            Se puede encontrar de manera gratuita en la <a href="https://play.google.com/store/apps/details?id=com.thedirtyone.escape" target="_blank">Google Play Store</a>.
+                        </p>
+                        <div class="row text-center">
+                            <div class="col-md-12 col-md-offset-">
+                                <a class="closelbl" href="#close">Cerrar</a>
+                            </div>
+                        </div>
+                        <div class="h-50"></div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+	   </div>
+    </div>
+    <!--fin Modal03-->
+    
+    <!--Modal04-->
+    <!-- <div id="openModal4" class="modalDialog">
+        <div>
+         <a href="#close" title="Cerrar" class="close">X</a>
+		   <div class="modal-content">
+             <div class="container">
+               <div class="portfolio-padding">
+                 <div class="col-md-2 col-md-offset-"></div>
+                 <div class="col-md-8 col-md-offset-">
+                        <h2>Sitio de la app</h2>
+                        <div class="row text-center">
+                            <div class="col-md-2 col-md-offset-"></div>
+                            <div class="col-md-8 col-md-offset-"><img src="img/portfolio/tdo.jpg" alt="Proyecto" class="img-responsive"/></div>
+                            <div class="col-md-2 col-md-offset-"></div>
+                        </div>
+                        <p>
+                            <a href="http://thedirtyone.tk/" target="_blank">Un página sencilla</a> para cubrir el requisito de la tienda
+                            para el juego de móviles, se utilizó únicamente HTML5 y Bootstrap para realizarla. Contiene el enlace para descargar la aplicación 
+                            y una página de política de privacidad.
+                        </p>
+                        <div class="row text-center">
+                            <div class="col-md-12 col-md-offset-">
+                                <a class="closelbl" href="#close">Cerrar</a>
+                            </div>
+                        </div>
+                        <div class="h-50"></div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+	   </div>
+    </div> -->
+    <!--fin Modal04-->
+    
+    <!--Modal05-->
+    <div id="openModal5" class="modalDialog">
+        <div>
+         <a href="#close" title="Cerrar" class="close">X</a>
+		   <div class="modal-content">
+             <div class="container">
+               <div class="portfolio-padding">
+                 <div class="col-md-2 col-md-offset-"></div>
+                 <div class="col-md-8 col-md-offset-">
+                        <h2>Web<br>Instituto Francisco Javier Mina</h2>
+                        <div class="row text-center">
+                            <div class="col-md-2 col-md-offset-"></div>
+                            <div class="col-md-8 col-md-offset-"><img src="img/portfolio/ifjm.jpg" alt="Proyecto" class="img-responsive"/></div>
+                            <div class="col-md-2 col-md-offset-"></div>
+                        </div>
+                        <div class="h-50"></div>
+                        <p>
+                            Entre varias de las actividades que realizo en mi actual trabajo, la de atender 
+                            <a href="http://franciscojaviermina.edu.mx/" target="_blank"> el sitio web de la institución</a> es una de ellas. 
+                            Esta página contiene información de eventos, tareas de los alumnos y distintas actividades de la escuela y soy yo quien se encarga de hacer las 
+                            correcciones y modificaciones que se van requiriendo, a la par de mantener al día su contenido.
+                        </p>
+                        <div class="row text-center">
+                            <div class="col-md-12 col-md-offset-">
+                                <a class="closelbl" href="#close">Cerrar</a>
+                            </div>
+                        </div>
+                        <div class="h-50"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	   </div>
+    </div>
+    <!--fin Modal05-->
+    
+    <!--Modal06-->
+    <div id="openModal6" class="modalDialog">
+        <div>
+         <a href="#close" title="Cerrar" class="close">X</a>
+		   <div class="modal-content">
+             <div class="container">
+               <div class="portfolio-padding">
+                 <div class="col-md-2 col-md-offset-"></div>
+                 <div class="col-md-8 col-md-offset-">
+                        <h2>Fotografía</h2>
+                        <div class="row text-center">
+                            <div class="col-md-2 col-md-offset-"></div>
+                            <div class="col-md-8 col-md-offset-"><img src="img/portfolio/vc.jpg" alt="Proyecto" class="img-responsive"/></div>
+                            <div class="col-md-2 col-md-offset-"></div>
+                        </div>
+                        <p>
+                            También me gusta hacer fotos, muchas de ellas se pueden encontrar en mi cuenta de <a href="https://www.instagram.com/ger.dv/" target="_blank">Instagram</a>,
+                            así como en mi galería de <a href="https://www.flickr.com/photos/124526801@N05/" target="_blank">Flickr</a>. 
+                        </p>
+                        <div class="row text-center">
+                            <div class="col-md-12 col-md-offset-">
+                                <a class="closelbl" href="#close">Cerrar</a>
+                            </div>
+                        </div>
+                        <div class="h-50"></div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+	   </div>
+    </div>
+    <!--fin Modal06-->
+    
+    <footer>
+        <div class="container">
+            <div class="col-12">
+                <div class="row text-center"><p> 2020 Germán Díaz</p></div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- scripts js -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        function navFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive ";
+        } else {
+        x.className = "topnav";
+      }
+     }
+    </script>
+    <!-- scripts js  -->
+    
+</body>
+
+</html>
